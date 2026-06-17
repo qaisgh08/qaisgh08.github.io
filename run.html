@@ -1,0 +1,8 @@
+<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Run the Project</title><link rel="stylesheet" href="style.css"></head><body><header><h1>Run the Project</h1><nav><a href="index.html">Home</a><a href="module.html">Module</a><a href="tools.html">Tools</a><a href="version-control.html">Version Control</a><a href="production-line.html">Production Line</a><a href="run.html">Run</a><a href="readme.html">README</a><a href="ai-use.html">AI Use</a></nav></header><main>
+<section><h2>Run Desktop HMI</h2><pre>pip install -r requirements.txt
+python hmi.py</pre><p>This opens the professor-style dark industrial HMI.</p></section>
+<section><h2>Run Flask Web HMI</h2><pre>python web_hmi/app.py</pre><p>Open http://127.0.0.1:5000 in your browser.</p></section>
+<section><h2>Run InfluxDB + Grafana</h2><pre>docker compose up -d
+python telemetry/producer.py</pre><p>Open Grafana at http://localhost:3000. Login: admin / admin.</p></section>
+<section><h2>GitHub Pages</h2><p>Upload the contents of the website folder to GitHub Pages. The menu links work because each button opens a real HTML page.</p></section>
+</main><footer>2026 - Pencil Production Line Project</footer></body></html>
